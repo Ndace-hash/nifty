@@ -1,36 +1,40 @@
 <script setup>
 import Box from './components/Box.vue'
+import Circles from "./components/Circles.vue"
+import Squares from "./components/Squares.vue"
 </script>
 
 <template>
   <Box class="py-4">
-    <div class="flex text-white">
+    <div class="flex text-white justify-between px-8">
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
     </div>
   </Box>
-  <Box class=" h-[500px]">
+  <Box class="h-[200px] flex items-center justify-center">
+    <h1 class="font-bold text-[100px]">Lorem. Lorem, ipsum.</h1>
+  </Box>
+  <Box class=" h-[700px]">
     <img src="./assets/images/sky-city.jpg" alt="sky-city" class="w-full h-full object-cover">
     <div class="border border-white absolute right-0 top-0 rounded-lg rounded-tl-none rounded-br-none bg-[#434343]">
       <div class="flex">
-        <div class="border border-x-white px-4">hello</div>
-        <div class="border border-x-white px-4">hello</div>
-        <div class="border border-x-white px-4">hello</div>
-        <div class="border border-x-white px-4">hello</div>
+        <div class="border border-x-white px-8 py-3">hello</div>
+        <div class="border border-x-white px-8 py-3">hello</div>
+        <div class="border border-x-white px-8 py-3">hello</div>
+        <div class="border border-x-white px-8 py-3">hello</div>
       </div>
-      <div class="flex">
+      <div class="flex justify-between">
         <div class="border-x-white border px-8">hello</div>
-        <div class="flex flex-col justify-between gap-y-12">
+        <div class="flex flex-col justify-between gap-y-12 flex-grow-0">
           <h2 class="uppercase">Initiate sequence</h2>
           <h2 class="capitalize text-sm text-right">do something <br />to get this</h2>
         </div>
       </div>
     </div>
     <button
-      class="absolute bottom-0 left-0 bg-white rounded-lg px-6 py-1 uppercase rounded-br-none rounded-tl-none text-black">click
-      to
-      mint</button>
+      class="absolute bottom-0 left-0 bg-white rounded-lg px-6 py-1 uppercase rounded-br-none rounded-tl-none text-black">Lorem,
+      ipsum.</button>
   </Box>
   <Box class="py-4">
     <div class="flex text-white">
@@ -42,12 +46,14 @@ import Box from './components/Box.vue'
   <Box class="flex h-[300px]">
     <div class="flex flex-col justify-between">
       <div class="uppercase about">
-        <p>The Nifty portal is an Nft art piece designed by <span>thoma dubois</span> with music by <span>gramatis</span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing. <span>Lorem, ipsum.</span> Lorem, ipsum dolor.
+          <span>gramatis</span>
           and
-          <span>llmas</span>.
+          <span>Lorem.
+          </span>.
         </p>
-        <p>it serves as your premium membership pass into <span>the nifty community</span>, a group of aspiring and
-          successful nft collectors and creators</p>
+        <p>Lorem ipsum dolor sit amet consectetur. <span>Lorem ipsum dolor sit.</span>, Lorem ipsum dolor sit amet
+          consectetur adipisicing elit.</p>
       </div>
       <div class="border-t border-white flex w-full">
         <div class="border-r border-white"> hello</div>
@@ -85,85 +91,56 @@ import Box from './components/Box.vue'
         </div>
       </div>
       <div class="w-full">
-        <p class="text-right">the nifty portal is mining <br />in three phases</p>
+        <p class="text-right">Lorem ipsum dolor sit amet.<br />in three phases</p>
       </div>
       <div class="w-full">
-        <p class="text-right">the nifty portal is mining <br />in three phases</p>
+        <p class="text-right">Lorem ipsum dolor sit amet.<br />in three phases</p>
       </div>
       <div class="w-full">
-        <p class="text-right">the nifty portal is mining <br />in three phases</p>
+        <p class="text-right">Lorem ipsum dolor sit amet.<br />in three phases</p>
       </div>
     </div>
   </Box>
   <Box class="min-h-[400px]">
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="border-b border-white flex justify-between">
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
     </div>
     <div class="flex h-full">
-      <div class="flex-grow">
-        <div class="border-b border-white flex items-center justify-center">
-          <div class="w-[300px] h-[300px] rounded-full border border-white relative flex items-center justify-center">
-            <div class="w-[80%] h-[80%] rounded-full border border-white flex items-center justify-center">
-              <div class="w-[70%] h-[70%] rounded-full border border-white flex items-center justify-center">
-                <div class="w-[60%] h-[60%] rounded-full border border-white flex items-center justify-center">
-                  <div class="w-[50%] h-[50%] rounded-full border border-white flex items-center justify-center">
-                    <div class="w-[40%] h-[40%] rounded-full border border-white flex items-center justify-center"></div>
-
-                  </div>
-
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>member discord</h3>
-          <p>exclusive access to the members-<br />only area of our discord</p>
+      <div class="flex-grow flex flex-col">
+        <Circles class="py-12" />
+        <div class="py-4 px-6">
+          <h3>Lorem, ipsum dolor.</h3>
+          <p>Lorem ipsum dolor sit amet.<br />Lorem ipsum dolor sit.</p>
         </div>
       </div>
-      <div class="border-x border-white flex-grow">
-        <div class="border-b border-white py-3 uppercase">
-          <h3>Early access</h3>
-          <p>early minting of our upcoming projects</p>
+      <div class="border-l border-white flex-grow flex flex-col">
+        <div class="border-b border-white uppercase py-4 px-6">
+          <h3>Lorem, ipsum.</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
         </div>
-        <div>
-          <div class="border-b border-white flex items-center justify-center">
-            <div class="w-[300px] h-[300px] rounded-2xl border border-white relative flex items-center justify-center">
-              <div class="w-[80%] h-[80%] rounded-2xl border border-white flex items-center justify-center">
-                <div class="w-[70%] h-[70%] rounded-2xl border border-white flex items-center justify-center">
-                  <div class="w-[60%] h-[60%] rounded-2xl border border-white flex items-center justify-center">
-                    <div class="w-[50%] h-[50%] rounded-2xl border border-white flex items-center justify-center">
-                      <div class="w-[40%] h-[40%] rounded-2xl border border-white flex items-center justify-center">
-                      </div>
-
-                    </div>
-
-                  </div>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
+        <Squares class="h-full py-12" />
       </div>
     </div>
-    <div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="border-t border-white flex justify-between">
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
+      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
+      </div>
     </div>
 
   </Box>
@@ -188,11 +165,11 @@ import Box from './components/Box.vue'
       </div>
     </div>
   </Box>
-  <Box class="box py-4 my-4">
-    <div class="flex text-white">
-      <p>Edit sequence initiated</p>
-      <p>Edit sequence initiated</p>
-      <p>Edit sequence initiated</p>
+  <Box class="py-4">
+    <div class="flex text-white justify-between px-8">
+      <p>Lorem ipsum dolor </p>
+      <p>Lorem ipsum dolor </p>
+      <p>Lorem ipsum dolor </p>
     </div>
   </Box>
 </template>

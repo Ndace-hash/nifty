@@ -2,6 +2,38 @@
 import Box from './components/Box.vue'
 import Circles from "./components/Circles.vue"
 import Squares from "./components/Squares.vue"
+import { onMounted } from 'vue'
+
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+gsap.registerPlugin(ScrollTrigger)
+onMounted(() => {
+  ScrollTrigger.batch(".box", {
+    onEnter(batch) {
+      gsap.fromTo(batch,
+        {
+          opacity: 0,
+          duration: 5
+        },
+        {
+          opacity: 1,
+          stagger: 0.5,
+          scrollTrigger: {
+            trigger: batch,
+            start: "30% bottom"
+          }
+        }
+      )
+    },
+    onLeave(batch) {
+      gsap.to(batch, { opacity: 0 })
+    },
+    onEnterBack(batch) {
+      gsap.to(batch, { opacity: 1 })
+    }
+  })
+})
+
 </script>
 
 <template>

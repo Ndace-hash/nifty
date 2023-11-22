@@ -6,7 +6,7 @@ import Squares from "./components/Squares.vue"
 
 <template>
   <Box class="py-4 h-[100px]">
-    <div class="flex text-white justify-between px-8">
+    <div class="flex text-white justify-between px-8 items-center h-full">
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
@@ -16,7 +16,7 @@ import Squares from "./components/Squares.vue"
     <h1 class="font-bold text-[100px]">Lorem. Lorem, ipsum.</h1>
   </Box>
   <Box class="py-4 h-[100px]">
-    <div class="flex text-white justify-between px-8">
+    <div class="flex text-white justify-between px-8 items-center h-full">
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
@@ -90,32 +90,8 @@ import Squares from "./components/Squares.vue"
       </div>
     </div>
   </Box>
-  <Box class=" flex">
-    <div class="w-3/5 h-[400px]">
-      <img src="./assets/images/sky-city.jpg" alt="" class="w-full h-full">
-    </div>
-    <div class="w-full">
-      <div class="flex">
-        <div>
-          <div class="flex gap-[5px]">
-
-            <span v-for="n of 10" class="h-full w-[5px] bg-white block"></span>
-          </div>
-        </div>
-        <div>
-          <p>002 // how it works</p>
-        </div>
-      </div>
-      <div class="w-full">
-        <p class="text-right">Lorem ipsum dolor sit amet.<br />in three phases</p>
-      </div>
-      <div class="w-full">
-        <p class="text-right">Lorem ipsum dolor sit amet.<br />in three phases</p>
-      </div>
-      <div class="w-full">
-        <p class="text-right">Lorem ipsum dolor sit amet.<br />in three phases</p>
-      </div>
-    </div>
+  <Box class=" flex h-screen overflow-hidden">
+    <iFrame src="/pacman.live/play.html" width="100%" height="100%" class="w-full h-full"></iFrame>
   </Box>
   <Box class="min-h-[400px]">
     <div class="border-b border-white flex justify-between">
@@ -181,8 +157,8 @@ import Squares from "./components/Squares.vue"
       </div>
     </div>
   </Box>
-  <Box class="py-4">
-    <div class="flex text-white justify-between px-8">
+  <Box class="py-4 h-[100px]">
+    <div class="flex text-white justify-between px-8 items-center h-full">
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>

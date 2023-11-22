@@ -5,15 +5,22 @@ import Squares from "./components/Squares.vue"
 </script>
 
 <template>
-  <Box class="py-4">
+  <Box class="py-4 h-[100px]">
     <div class="flex text-white justify-between px-8">
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
       <p>Lorem ipsum dolor </p>
     </div>
   </Box>
-  <Box class="h-[200px] flex items-center justify-center">
+  <Box class="h-[250px] flex items-center justify-center">
     <h1 class="font-bold text-[100px]">Lorem. Lorem, ipsum.</h1>
+  </Box>
+  <Box class="py-4 h-[100px]">
+    <div class="flex text-white justify-between px-8">
+      <p>Lorem ipsum dolor </p>
+      <p>Lorem ipsum dolor </p>
+      <p>Lorem ipsum dolor </p>
+    </div>
   </Box>
   <Box class=" h-[700px]">
     <img src="./assets/images/sky-city.jpg" alt="sky-city" class="w-full h-full object-cover">
@@ -43,9 +50,9 @@ import Squares from "./components/Squares.vue"
       <p>Edit sequence initiated</p>
     </div>
   </Box>
-  <Box class="flex h-[300px]">
+  <Box class="flex min-h-[300px]">
     <div class="flex flex-col justify-between">
-      <div class="uppercase about">
+      <div class="uppercase about text-lg">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing. <span>Lorem, ipsum.</span> Lorem, ipsum dolor.
           <span>gramatis</span>
           and
@@ -55,21 +62,30 @@ import Squares from "./components/Squares.vue"
         <p>Lorem ipsum dolor sit amet consectetur. <span>Lorem ipsum dolor sit.</span>, Lorem ipsum dolor sit amet
           consectetur adipisicing elit.</p>
       </div>
-      <div class="border-t border-white flex w-full">
-        <div class="border-r border-white"> hello</div>
-        <div class="border-r border-white"> hello</div>
-        <div class="border-r border-white"> hello</div>
-        <div class="border-r border-white"> hello</div>
+      <div class="border-t border-white flex w-full justify-between">
+        <div class="border-r border-white flex-grow flex items-center justify-center py-3 uppercase"> hello</div>
+        <div class="border-r border-white flex-grow flex items-center justify-center py-3 uppercase"> hello</div>
+        <div class="border-r border-white flex-grow flex items-center justify-center py-3 uppercase"> hello</div>
+        <div class="border-r border-white flex-grow flex items-center justify-center py-3 uppercase"> hello</div>
       </div>
     </div>
-    <div class="border-x px-4">
-      <h1>Breaking <br /> News</h1>
-      <h1>Breaking <br /> News</h1>
-      <h1>Breaking <br /> News</h1>
+    <div class="border-x px-4 w-max">
+      <h1 class="text-[40px] leading-none font-bold uppercase my-2">Breaking <br /> <span class="text-[70px]">News</span>
+      </h1>
+      <h1 class="text-[40px] leading-none font-bold uppercase my-2">Breaking <br /> <span class="text-[70px]">News</span>
+      </h1>
+      <h1 class="text-[40px] leading-none font-bold uppercase my-2">Breaking <br /> <span class="text-[70px]">News</span>
+      </h1>
+      <h1 class="text-[40px] leading-none font-bold uppercase my-2">Breaking <br /> <span class="text-[70px]">News</span>
+      </h1>
+      <h1 class="text-[40px] leading-none font-bold uppercase my-2">Breaking <br /> <span class="text-[70px]">News</span>
+      </h1>
+      <h1 class="text-[40px] leading-none font-bold uppercase my-2">Breaking <br /> <span class="text-[70px]">News</span>
+      </h1>
     </div>
-    <div>
-      <div class="border-b border-white">
-        <div class="border-2 border-white rounded-full w-[50px] h-[50px]">
+    <div class="w-1/4 ">
+      <div class="border-b border-white flex items-center justify-center py-8">
+        <div class="border-2 border-white rounded-full w-[150px] h-[150px]">
         </div>
       </div>
     </div>

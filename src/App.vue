@@ -1,15 +1,16 @@
 <script setup>
+import Box from './components/Box.vue'
 </script>
 
 <template>
-  <div class="box py-4">
+  <Box class="py-4">
     <div class="flex text-white">
-      <p>Edit sequence initiated</p>
-      <p>Edit sequence initiated</p>
-      <p>Edit sequence initiated</p>
+      <p>Lorem ipsum dolor </p>
+      <p>Lorem ipsum dolor </p>
+      <p>Lorem ipsum dolor </p>
     </div>
-  </div>
-  <section class="box my-4 relative h-[500px] overflow-hidden">
+  </Box>
+  <Box class=" h-[500px]">
     <img src="./assets/images/sky-city.jpg" alt="sky-city" class="w-full h-full object-cover">
     <div class="border border-white absolute right-0 top-0 rounded-lg rounded-tl-none rounded-br-none bg-[#434343]">
       <div class="flex">
@@ -30,15 +31,15 @@
       class="absolute bottom-0 left-0 bg-white rounded-lg px-6 py-1 uppercase rounded-br-none rounded-tl-none text-black">click
       to
       mint</button>
-  </section>
-  <div class="box py-4">
+  </Box>
+  <Box class="py-4">
     <div class="flex text-white">
       <p>Edit sequence initiated</p>
       <p>Edit sequence initiated</p>
       <p>Edit sequence initiated</p>
     </div>
-  </div>
-  <section class="box flex my-4 h-[300px]">
+  </Box>
+  <Box class="flex h-[300px]">
     <div class="flex flex-col justify-between">
       <div class="uppercase about">
         <p>The Nifty portal is an Nft art piece designed by <span>thoma dubois</span> with music by <span>gramatis</span>
@@ -66,8 +67,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section class="box flex overflow-hidden">
+  </Box>
+  <Box class=" flex">
     <div class="w-3/5 h-[400px]">
       <img src="./assets/images/sky-city.jpg" alt="" class="w-full h-full">
     </div>
@@ -93,8 +94,8 @@
         <p class="text-right">the nifty portal is mining <br />in three phases</p>
       </div>
     </div>
-  </section>
-  <section class="box my-4 min-h-[400px]">
+  </Box>
+  <Box class="min-h-[400px]">
     <div>
       <div></div>
       <div></div>
@@ -165,8 +166,8 @@
       <div></div>
     </div>
 
-  </section>
-  <section class="box h-[600px] relative flex items-center justify-center">
+  </Box>
+  <Box class=" h-[600px] flex items-center justify-center">
     <img src="./assets/images/sky-city.jpg" alt="" class="object-cover w-full h-full">
     <div class="border-b border-white flex items-center justify-center absolute">
       <div class="w-[300px] h-[300px] rounded-2xl border border-white relative flex items-center justify-center">
@@ -186,14 +187,14 @@
         </div>
       </div>
     </div>
-  </section>
-  <div class="box py-4 my-4">
+  </Box>
+  <Box class="box py-4 my-4">
     <div class="flex text-white">
       <p>Edit sequence initiated</p>
       <p>Edit sequence initiated</p>
       <p>Edit sequence initiated</p>
     </div>
-  </div>
+  </Box>
 </template>
 
 

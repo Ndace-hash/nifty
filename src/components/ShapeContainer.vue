@@ -1,6 +1,6 @@
 <template>
     <div id="shape-container">
-        <div class="border-b border-white flex justify-between">
+        <div class="border-b border-white  flex justify-between">
             <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem,
                     ipsum.</span>
             </div>
@@ -17,7 +17,7 @@
                     ipsum.</span>
             </div>
         </div>
-        <div class="flex h-full">
+        <div class="flex h-full flex-col md:flex-row">
             <div class="flex-grow flex flex-col">
                 <div class="overflow-hidden">
 

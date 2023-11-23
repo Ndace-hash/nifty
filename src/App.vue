@@ -1,7 +1,6 @@
 <script setup>
 import Box from './components/Box.vue'
-import Circles from "./components/Circles.vue"
-import Squares from "./components/Squares.vue"
+import ShapeContainer from './components/ShapeContainer.vue'
 import { onMounted } from 'vue'
 
 import gsap from 'gsap';
@@ -13,14 +12,16 @@ onMounted(() => {
       gsap.fromTo(batch,
         {
           opacity: 0,
-          duration: 5
+          duration: 15
         },
         {
           opacity: 1,
           stagger: 0.5,
           scrollTrigger: {
             trigger: batch,
-            start: "30% bottom"
+            start: "20% bottom",
+            end: "80% bottom",
+            scrub: true
           }
         }
       )
@@ -126,47 +127,7 @@ onMounted(() => {
     <iFrame src="/pacman.live/play.html" width="100%" height="100%" class="w-full h-full"></iFrame>
   </Box>
   <Box class="min-h-[400px]">
-    <div class="border-b border-white flex justify-between">
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-    </div>
-    <div class="flex h-full">
-      <div class="flex-grow flex flex-col">
-        <Circles class="py-12" />
-        <div class="py-4 px-6">
-          <h3>Lorem, ipsum dolor.</h3>
-          <p>Lorem ipsum dolor sit amet.<br />Lorem ipsum dolor sit.</p>
-        </div>
-      </div>
-      <div class="border-l border-white flex-grow flex flex-col">
-        <div class="border-b border-white uppercase py-4 px-6">
-          <h3>Lorem, ipsum.</h3>
-          <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <Squares class="h-full py-12" />
-      </div>
-    </div>
-    <div class="border-t border-white flex justify-between">
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-      <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem, ipsum.</span>
-      </div>
-    </div>
-
+    <ShapeContainer />
   </Box>
   <Box class=" h-[600px] flex items-center justify-center">
     <img src="./assets/images/sky-city.jpg" alt="" class="object-cover w-full h-full">

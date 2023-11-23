@@ -28,20 +28,22 @@ const obj = ref(null)
 onMounted(() => {
     const inView = ref(ScrollTrigger.isInViewport(obj.value, 1))
 
+    if (inView) {
 
-    ScrollTrigger.observe({
-        target: window,
-        type: "wheel,touch,pointer,scroll",
-        onDown() {
-            gsap.to(obj.value, {
-                scale: '3'
-            })
-        },
-        onUp() {
-            gsap.to(obj.value, {
-                scale: 0
-            })
-        }
-    })
+        ScrollTrigger.observe({
+            target: window,
+            type: "wheel,touch,pointer,scroll",
+            onDown() {
+                gsap.to(obj.value, {
+                    scale: '3'
+                })
+            },
+            onUp() {
+                gsap.to(obj.value, {
+                    scale: 0
+                })
+            }
+        })
+    }
 })
 </script>

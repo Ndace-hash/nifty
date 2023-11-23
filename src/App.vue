@@ -1,7 +1,7 @@
 <script setup>
 import Box from './components/Box.vue'
 import ShapeContainer from './components/ShapeContainer.vue'
-import { onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
@@ -34,6 +34,29 @@ onMounted(() => {
     }
   })
 })
+
+
+const obj = ref(null)
+onMounted(() => {
+  const inView = ref(ScrollTrigger.isInViewport(obj.value, 1))
+
+
+  ScrollTrigger.observe({
+    target: window,
+    type: "wheel,touch,pointer,scroll",
+    onDown() {
+      gsap.to(obj.value, {
+        scale: 4
+      })
+    },
+    onUp() {
+      gsap.to(obj.value, {
+        scale: 0.5
+      })
+    }
+  })
+})
+
 
 </script>
 
@@ -131,7 +154,7 @@ onMounted(() => {
   </Box>
   <Box class=" h-[600px] flex items-center justify-center">
     <img src="./assets/images/sky-city.jpg" alt="" class="object-cover w-full h-full">
-    <div class="border-b border-white flex items-center justify-center absolute">
+    <div class="flex items-center justify-center absolute" ref="obj">
       <div class="w-[300px] h-[300px] rounded-2xl border border-white relative flex items-center justify-center">
         <div class="w-[80%] h-[80%] rounded-2xl border border-white flex items-center justify-center">
           <div class="w-[70%] h-[70%] rounded-2xl border border-white flex items-center justify-center">

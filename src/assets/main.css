@@ -4,15 +4,16 @@
 
 #app {
 	width: 100%;
-	max-width: 1240px;
+	max-width: 1380px;
 	margin: 0 auto;
 	overflow-x: hidden;
 }
 
 body {
 	background-color: #434343;
-	padding: 15px 20px;
 	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
 }
 .box {
 	border: 2px solid white;

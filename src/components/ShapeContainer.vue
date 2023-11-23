@@ -13,9 +13,6 @@
             <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem,
                     ipsum.</span>
             </div>
-            <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem,
-                    ipsum.</span>
-            </div>
         </div>
         <div class="flex h-full flex-col md:flex-row">
             <div class="flex-grow flex flex-col">
@@ -39,10 +36,7 @@
                 </div>
             </div>
         </div>
-        <div class="border-t border-white flex justify-between">
-            <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem,
-                    ipsum.</span>
-            </div>
+        <div class="border-t border-white flex justify-between w-full">
             <div class="border-r border-white py-2 px-4 flex items-center justify-center flex-grow"><span>Lorem,
                     ipsum.</span>
             </div>

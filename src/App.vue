@@ -38,21 +38,15 @@ onMounted(() => {
 
 const obj = ref(null)
 onMounted(() => {
-  const inView = ref(ScrollTrigger.isInViewport(obj.value, 1))
-
-
-  ScrollTrigger.observe({
-    target: window,
-    type: "wheel,touch,pointer,scroll",
-    onDown() {
-      gsap.to(obj.value, {
-        scale: 4
-      })
-    },
-    onUp() {
-      gsap.to(obj.value, {
-        scale: 0.5
-      })
+  gsap.fromTo(obj.value, {
+    scale: 0.5
+  }, {
+    scale: 3,
+    scrollTrigger: {
+      trigger: obj.value,
+      start: 'top 70%',
+      end: 'bottom center',
+      scrub: true,
     }
   })
 })
@@ -168,13 +162,9 @@ onMounted(() => {
               <div class="w-[50%] h-[50%] rounded-2xl border border-white flex items-center justify-center">
                 <div class="w-[40%] h-[40%] rounded-2xl border border-white flex items-center justify-center">
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
       </div>
     </div>

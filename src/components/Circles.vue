@@ -16,4 +16,41 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue'
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+
+const obj = ref(null)
+onMounted(() => {
+    const inView = ref(ScrollTrigger.isInViewport(obj.value, 1))
+
+    // if (inView) {
+    // gsap.fromTo(obj.value, {
+    //     scale: 0,
+    //     duration: 500
+    // }, {
+    //     scale: 3,
+    //     // scrollTrigger: {
+    //     //     trigger: obj.value,
+    //     //     start: 'top bottom',
+    //     //     end: "bottom center"
+    //     // }
+    // })
+    // }
+
+    ScrollTrigger.observe({
+        target: window,
+        type: "wheel,touch,pointer,scroll",
+        onDown() {
+            gsap.to(obj.value, {
+                scale: '3'
+            })
+        },
+        onUp() {
+            gsap.to(obj.value, {
+                scale: 0
+            })
+        }
+    })
+})
 </script>

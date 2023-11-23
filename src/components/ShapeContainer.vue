@@ -19,7 +19,10 @@
         </div>
         <div class="flex h-full">
             <div class="flex-grow flex flex-col">
-                <Circles class="py-12" />
+                <div class="overflow-hidden">
+
+                    <Circles class="py-12" />
+                </div>
                 <div class="py-4 px-6 border-t border-white">
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet.<br />Lorem ipsum dolor sit.</p>
@@ -30,7 +33,10 @@
                     <h3>Lorem, ipsum.</h3>
                     <p>Lorem ipsum dolor sit amet consectetur.</p>
                 </div>
-                <Squares class="h-full py-12" />
+                <div class="overflow-hidden">
+
+                    <Squares class="h-full py-12" />
+                </div>
             </div>
         </div>
         <div class="border-t border-white flex justify-between">

@@ -23,7 +23,7 @@
 
                     <Circles class="py-12" />
                 </div>
-                <div class="py-4 px-6 border-t border-white">
+                <div class="py-4 px-6 border-y border-white">
                     <h3>Lorem, ipsum dolor.</h3>
                     <p>Lorem ipsum dolor sit amet.<br />Lorem ipsum dolor sit.</p>
                 </div>

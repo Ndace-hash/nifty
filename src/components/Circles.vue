@@ -31,12 +31,12 @@ onMounted(() => {
             type: "wheel,touch,pointer,scroll",
             onDown() {
                 gsap.to(obj.value, {
-                    scale: '3'
+                    scale: 3
                 })
             },
             onUp() {
                 gsap.to(obj.value, {
-                    scale: 0
+                    scale: 0.5
                 })
             }
         })

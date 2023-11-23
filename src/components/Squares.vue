@@ -40,7 +40,7 @@ onMounted(() => {
             },
             onUp() {
                 gsap.to(obj.value, {
-                    scale: 0
+                    scale: 0.5
                 })
             }
         })

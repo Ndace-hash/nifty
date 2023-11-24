@@ -6,6 +6,7 @@ import { ref, onMounted } from 'vue'
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
+const obj = ref(null)
 onMounted(() => {
   ScrollTrigger.batch(".box", {
     onEnter(batch) {
@@ -33,11 +34,8 @@ onMounted(() => {
       gsap.to(batch, { opacity: 1 })
     }
   })
-})
 
 
-const obj = ref(null)
-onMounted(() => {
   gsap.fromTo(obj.value, {
     scale: 0.5
   }, {
@@ -50,6 +48,8 @@ onMounted(() => {
     }
   })
 })
+
+
 
 
 </script>

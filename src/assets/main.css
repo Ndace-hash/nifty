@@ -11,6 +11,11 @@
 
 body {
 	background-color: #434343;
+	background-image: url("./images/dust-and-scratches-2.png"),
+		url("./images/dots.svg");
+	background-repeat: repeat, repeat;
+	background-size: auto, auto;
+	background-position: 50% 50%, 50% 50%;
 	color: white;
 	border: 2px solid white;
 	border-radius: 10px;

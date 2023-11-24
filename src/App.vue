@@ -140,7 +140,7 @@ onMounted(() => {
       </h1>
     </div>
     <div class="hidden md:flex md:w-1/4 ">
-      <div class="border-b border-white flex items-center justify-center py-8">
+      <div class="border-b border-white flex items-center justify-center py-8 w-full">
         <div class="border-2 border-white rounded-full w-[150px] h-[150px]">
         </div>
       </div>

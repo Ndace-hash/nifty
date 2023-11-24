@@ -63,7 +63,7 @@ onMounted(() => {
     </div>
   </Box>
   <Box class="h-[250px] flex items-center justify-center">
-    <h1 class="font-bold text-[40px] md:text-[80px]">Lorem. Lorem</h1>
+    <h1 class="font-bold text-[40px] md:text-[80px]">YIELD 3000</h1>
   </Box>
   <Box class="py-4 h-[100px]">
     <div class="flex text-white justify-between px-8 items-center h-full">
